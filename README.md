@@ -17,6 +17,8 @@ Integrantes:
 usados, justificativas para adoção dessa arquitetura etc. Se relevante,
 documentar também visões de processo e física.  
 
+[Wikipedia](https://pt.wikipedia.org/wiki/VLC) - Vale a pena dar uma olhada
+
 <h3> 1 - Descrição, features, objetivos e linguagens de programação </h3>
 
 (ReadMe do VLC) VLC is a popular libre and open source media player and multimedia engine,
@@ -34,7 +36,7 @@ been downloaded close to one billion times.
 
   A equipe do VLC conta com atuais 444 contribuidores ativos no mundo todo. Porém muito mais pessoas são lembradas e agradecidas no arquivo [AUTHORS](https://github.com/videolan/vlc/blob/master/AUTHORS) no diretório raíz do projeto. Entre estes estão 596 programadores, 13 artistas, uma pessoa responsável pela documentação.
   
-  Dentre os desenvolvedores supracitados, esta é a lista dos mais relevantes e/ou ativos:
+  Entre os desenvolvedores supracitados, esta é a lista dos mais relevantes e/ou ativos:
   
 1. [jbkempf](https://github.com/jbkempf) - 6,701 commits / 463,234 ++ / 604,582 --
 2. [fcartegnie](https://github.com/fcartegnie) - 3,576 commits / 165,082 ++ / 116,866 --
