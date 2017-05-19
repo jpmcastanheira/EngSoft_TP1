@@ -8,11 +8,11 @@ Integrantes:
   
 <h1> Tópicos a serem tratados </h1>
 
-Descrição do sistema, incluindo principais features, objetivo, linguagem de programação.  
-Informações da equipe de desenvolvimento: principais desenvolvedores, funções na equipe (?)  
-Breve descrição da evolução do sistema: principais releases e novidades de cada uma.  
-Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.  
-Documentação da arquitetura, na visão de "desenvolvimento" (modular), isto
+1 - Descrição do sistema, incluindo principais features, objetivo, linguagem de programação.  
+2 - Informações da equipe de desenvolvimento: principais desenvolvedores, funções na equipe (?)  
+3 - Breve descrição da evolução do sistema: principais releases e novidades de cada uma.  
+4 - Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.  
+5 - Documentação da arquitetura, na visão de "desenvolvimento" (modular), isto
 é, principais módulos e suas responsabilidades, principais padrões de projeto
 usados, justificativas para adoção dessa arquitetura etc. Se relevante,
 documentar também visões de processo e física.  
