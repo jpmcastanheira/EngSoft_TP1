@@ -6,7 +6,7 @@ Integrantes:
   César Augusto Moura Ferreira  
   João Paulo Martins Castanheira
   
-<h1> Tópicos a serem tratados </h1>
+<h2> Tópicos a serem tratados </h2>
 
 1 - Descrição do sistema, incluindo principais features, objetivo, linguagem de programação.  
 2 - Informações da equipe de desenvolvimento: principais desenvolvedores, funções na equipe (?)  
@@ -16,3 +16,13 @@ Integrantes:
 é, principais módulos e suas responsabilidades, principais padrões de projeto
 usados, justificativas para adoção dessa arquitetura etc. Se relevante,
 documentar também visões de processo e física.  
+
+<h3> 1 - Descrição, features, objetivos e linguagens de programação </h3>
+
+<h3> 2 - Equipe de Desenvolvimento - </h3>
+
+<h3> 3 - Evolução do sistema </h3>
+
+<h3> 4 - Frameworks, ferramentas e LPs </h3>
+
+<h3> 5 - Documentação da arquitetura </h3>
