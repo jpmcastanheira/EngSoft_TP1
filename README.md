@@ -6,7 +6,7 @@ Trabalho Prático 1 - Engenharia de Software 2 - Universidade Federal de Minas G
   
   César Augusto Moura Ferreira  
   
-  João Paulo Martins Castanheira  
+  João Paulo Martins Castanheira
   
 <h2> Tópicos a serem tratados </h2>
 
