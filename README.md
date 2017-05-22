@@ -21,16 +21,9 @@ documentar também visões de processo e física.
 
 <h3> 1 - Descrição, features, objetivos e linguagens de programação </h3>
 
-(ReadMe do VLC) VLC is a popular libre and open source media player and multimedia engine,
-used by a large number of individuals, professionals, companies and
-institutions. Using open source technologies and libraries, VLC has been
-ported to most computing platforms, including GNU/Linux, Windows, Mac OS X,
-BSD, iOS and Android.
-VLC can play most multimedia files, discs, streams, allows playback from
-devices, and is able to convert to or stream in various formats.
-The VideoLAN project was started at the university École Centrale Paris who
-relicensed VLC under the GPLv2 license in February 2001. Since then, VLC has
-been downloaded close to one billion times.
+O VLC é um software livre de código aberto, dedicado a reproduzir, tocar e transmitir multimídia. A sigla VLC deriva de "VideoLAN Client", nome abandonado devido a incorporação do programa servidor (VideoLAN Server) no software cliente. O sistema dá suporta para uma ampla variedade de formatos de vídeo, tais como: OGM, MPEG1, MPEG-2, MPEG-4, DivX, DVD, VCDs etc. Os formatos de áudio também têm suporte para  OGG, Speex, FLAC, MPC (Musepack), MP3, WAV e outros. Usando tecnologias e bibliotecas open source, o VLC foi compatibilizado com a maioria das plataformas existentes, incluindo GNU/Linux, Windows, Mac OS X, BSD, iOS e Android.
+
+Além disso o VLC suporta vários protocolos de transmissão em redes, podendo ser usado como servidor de video/audio em uma rede de alta velicidade, suportando tanto o unicast quanto o multicast operados em IPv4 ou IPv6.
 
 <h3> 2 - Equipe de Desenvolvimento </h3>
 
@@ -50,6 +43,8 @@ been downloaded close to one billion times.
 10. [chouquette](https://github.com/chouquette) - 849 commits / 17,260 ++ / 12,984 --
 
 <h3> 3 - Evolução do sistema </h3>
+
+The VideoLAN project was started at the university École Centrale Paris who relicensed VLC under the GPLv2 license in February 2001. Since then, VLC has been downloaded close to one billion times.
 
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
