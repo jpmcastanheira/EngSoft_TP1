@@ -2,8 +2,10 @@
 Trabalho Prático 1 - Engenharia de Software 2 - Universidade Federal de Minas Gerais
 
 <h2> Integrantes </h2>
-  Breno Campos Ferreira Guimarães  
+  Breno Campos Ferreira Guimarães 
+  
   César Augusto Moura Ferreira  
+  
   João Paulo Martins Castanheira  
   
 <h2> Tópicos a serem tratados </h2>
