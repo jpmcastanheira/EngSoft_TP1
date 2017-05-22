@@ -74,6 +74,10 @@ Em 2007 por motivos de incompatibilidade de licensas, os líderes do projeto dec
 
 A versão 2.0.0 do VLC media player foi lançada em 18 de fevereiro de 2012, uma versão para a Windows Store foi lançada em 13 de março de 2014. Suporte para Windows RT, Windows Phone e Xbox One foram posteriormente adicionadas ao software. Em 2016 a aplicação já ocupa a terceira posição no ranking em [SourceForge.net](https://sourceforge.net/) de softwares mais baixados, posição que ocupa até hoje com a impressionante marca de mais de dois bilhões de downloads.
 
+A equipe de desenvolvimento já realizou 70.255 commits até hoje e o software continua evoluindo. Abaixo um gráfico com a relação de alterações em uma linha de tempo do programa.
+
+![Gráfico: Tempo x Alterações](https://drive.google.com/open?id=0ByMszYGbSNLsbjJmdFdIQUVlSjg)
+
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
 <h3> 5 - Documentação da arquitetura </h3>
