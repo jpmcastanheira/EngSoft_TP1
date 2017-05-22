@@ -33,7 +33,7 @@ O reprodutor pode executar um vídeo diretamente no papel de parede da área de 
 
   A equipe do VLC conta com atuais 444 contribuidores ativos no mundo todo. Porém muito mais pessoas são lembradas e agradecidas no arquivo [AUTHORS](https://github.com/videolan/vlc/blob/master/AUTHORS) no diretório raíz do projeto. Entre estes estão 596 programadores, 13 artistas, uma pessoa responsável pela documentação.
   
-  Entre os desenvolvedores supracitados, esta é a lista dos mais relevantes e/ou ativos:
+  Entre os desenvolvedores supracitados, esta é a lista dos mais relevantes e/ou ativos na lista de contribuidores do projeto no GitHub:
   
 1. [jbkempf](https://github.com/jbkempf) - 6,701 commits / 463,234 ++ / 604,582 --
 2. [fcartegnie](https://github.com/fcartegnie) - 3,576 commits / 165,082 ++ / 116,866 --
@@ -46,9 +46,43 @@ O reprodutor pode executar um vídeo diretamente no papel de parede da área de 
 9. [tguillem](https://github.com/tguillem) - 1,490 commits / 70,725 ++ / 44,329 --
 10. [chouquette](https://github.com/chouquette) - 849 commits / 17,260 ++ / 12,984 --
 
+A equipe de desenvolvimento do VLC, como citado anteriormente é formada por desenvolvedores do mundo todo e especialmente ex-estudantes da universidade École Centrale Paris. Abaixo alguns dos contribuidores mais relevantes e suas respectivas responsabilidades:
+
+Billy Biggs 
+- Aprimoramentos em libdvdcss
+Sven Heithecker
+- Manutenção do cache para discos com conteúdo identico mas chaves diferentes.
+Samuel Hocevar
+- Código original de descriptografia CSS do VCL
+Eugenio Jarosiewicz
+- MacOS X DVD ioctls.
+Jon Lech Johansen
+- Porta Win32.
+- Manutenção na porta Darwin.
+KO Myung-Hun
+- Porta OS/2.
+Jean-Baptiste Kempf
+- Gerente
+Markus Kuespert
+- Porta BeOS do DVD ioctls
+Pascal Levesque
+- Porta QNX.
+Steve Lhomme
+- Melhorias em win32.
+Christophe Massiot
+- Ex gerente.
+Steven M. Schultz
+- Porta BSD/OS.
+Alex Strelnikov
+- Porta OS/2.
+German Tischler
+- Patch de entrada FreeBSD DVD.
+Gildas Bazin
+- Manutenções diversas na porta Win32.
+
 <h3> 3 - Evolução do sistema </h3>
 
-The VideoLAN project was started at the university École Centrale Paris who relicensed VLC under the GPLv2 license in February 2001. Since then, VLC has been downloaded close to one billion times.
+O projeto VideoLan foi iniciado na universidade École Centrale Paris a qual relicenciou a VLC sobre a licensa GPLv2 em fevereiro de 2001. Desde então, o VLC obteve cerca de um bilhão de downloads.
 
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
