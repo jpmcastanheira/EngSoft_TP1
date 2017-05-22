@@ -48,37 +48,21 @@ O reprodutor pode executar um vídeo diretamente no papel de parede da área de 
 
 A equipe de desenvolvimento do VLC, como citado anteriormente é formada por desenvolvedores do mundo todo e especialmente ex-estudantes da universidade École Centrale Paris. Abaixo alguns dos contribuidores mais relevantes e suas respectivas responsabilidades:
 
-Billy Biggs 
-- Aprimoramentos em libdvdcss  
-Sven Heithecker  
-- Manutenção do cache para discos com conteúdo identico mas chaves diferentes.  
-Samuel Hocevar  
-- Código original de descriptografia CSS do VCL  
-Eugenio Jarosiewicz  
-- MacOS X DVD ioctls.  
-Jon Lech Johansen  
-- Porta Win32.  
-- Manutenção na porta Darwin.  
-KO Myung-Hun  
-- Porta OS/2.  
-Jean-Baptiste Kempf  
-- Gerente  
-Markus Kuespert  
-- Porta BeOS do DVD ioctls  
-Pascal Levesque  
-- Porta QNX.  
-Steve Lhomme  
-- Melhorias em win32.  
-Christophe Massiot  
-- Ex gerente.  
-Steven M. Schultz  
-- Porta BSD/OS.  
-Alex Strelnikov  
-- Porta OS/2.  
-German Tischler  
-- Patch de entrada FreeBSD DVD.  
-Gildas Bazin  
-- Manutenções diversas na porta Win32.  
+Billy Biggs - Aprimoramentos em libdvdcss  
+Sven Heithecker - Manutenção do cache para discos com conteúdo identico mas chaves diferentes.  
+Samuel Hocevar - Código original de descriptografia CSS do VCL  
+Eugenio Jarosiewicz - MacOS X DVD ioctls.  
+Jon Lech Johansen - Porta Win32 e Manutenção na porta Darwin.  
+KO Myung-Hun - Porta OS/2.  
+Jean-Baptiste Kempf - Gerente  
+Markus Kuespert - Porta BeOS do DVD ioctls  
+Pascal Levesque - Porta QNX.  
+Steve Lhomme - Melhorias em win32.  
+Christophe Massiot - Ex gerente.  
+Steven M. Schultz - Porta BSD/OS.  
+Alex Strelnikov - Porta OS/2.  
+German Tischler - Patch de entrada FreeBSD DVD.  
+Gildas Bazin - Manutenções diversas na porta Win32.  
 
 <h3> 3 - Evolução do sistema </h3>
 
