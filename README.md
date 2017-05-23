@@ -97,8 +97,7 @@ A maior parte dos plugins relacionados com X11 agora usam XCB ao invés de Xlib.
  
 O build padrão agora assume que o sistema operacional usa UTF-8 para os seus arquivos de sistema é conteúdo dos mesmos (com exceção da Windows port). Se isso é inaceitável, rode --enable-non-utf8 para configurar o script. Non-UTF-8 file systems support will be removed in future versions.
 
-The VLC plugins path can be overridden with the VLC_PLUGIN_PATH environment
-   variable. The --plugin-path command line option was removed.
+Os diretórios dos plugins do VLC podem ser sobrescritos, com a variável de ambiente VLC_PLUGIN_PATH. A opção do comando comando --plugin-path foi removida.
  * The default tarballs are now compressed with XZ/LZMA: .tar.xz
  * OSS support is not compiled on Linux by default, pass --enable-oss to the
    configure script if you use OSSv4 or really want to use OSS emulation.
