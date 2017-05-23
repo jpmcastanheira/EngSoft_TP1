@@ -86,6 +86,31 @@ No Linux, os bugs conhecidos na biblioteca ALSA podem impedir a reprodução de 
 
 O módulo de cache se moveu para ${libdir}/vlc/. Portanto a partir de agora o módulo pode ser gerado em tempo de instalação a não ser que você execute a 'staged installation '. Neste caso você pode gerar o módulo cache no seu script pós instalação, invocando o comando 'vlc-cache-gen'. Se o módulo cache não estiver presente e o VLC não puder escrever em ${libdir}/vlc/, resultara em um tempo excessivo para ligar o programa.
 
+A maior parte dos plugins relacionados com X11 agora usam XCB ao invés de Xlib. VLC agora usa:
+   - xproto,
+   - xcb, xcb-shm, xcb-xv, xcb-randr (from libxcb),
+   - xcb-keysyms (from xcb-utils),
+   - x11-xcb (from libx11) - only for GLX support.
+ * Em plataformas X11, uma versão de _trabalho_ de xdg-screensaver é tipicamente requerida para inibir o descanso de tela durante a execução de um vídeo.
+ 
+ 2. Alterações importantes entre as versões 1.1.13 e 2.0.0:  
+ 
+O build padrão agora assume que o sistema operacional usa UTF-8 para os seus arquivos de sistema é conteúdo dos mesmos (com exceção da Windows port). Se isso é inaceitável, rode --enable-non-utf8 para configurar o script. Non-UTF-8 file systems support will be removed in future versions.
+
+The VLC plugins path can be overridden with the VLC_PLUGIN_PATH environment
+   variable. The --plugin-path command line option was removed.
+ * The default tarballs are now compressed with XZ/LZMA: .tar.xz
+ * OSS support is not compiled on Linux by default, pass --enable-oss to the
+   configure script if you use OSSv4 or really want to use OSS emulation.
+ * The webplugins have moved to: git://git.videolan.org/npapi-vlc.git
+
+ 
+ 1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
+ 
+ 1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
+ 
+ 1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
+
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
 A LibVLC é capaz de acessar dispositivos de captura, transcodificar e transmitir áudio e vídeo em diferentes protocolos. Permitindo que os desenvolvedores criem uma ampla gama de aplicações multimídia usando os recursos do VLC.
