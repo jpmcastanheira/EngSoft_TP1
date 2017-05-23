@@ -78,7 +78,7 @@ A equipe de desenvolvimento já realizou 70.255 commits até hoje e o software c
 
 ![Gráfico: Tempo x Alterações](https://lh5.googleusercontent.com/WI96MY3QPcFA31maS9VoTVkpB3AsvIE8tJlIeJwm8-TGdQKgT1F2TR5VhsxLICTqjb0-RPtcN5A8YtU=w1366-h662-rw)
 
-A comunidade responsável já liberou dezenas de versões estaveis nesses 16 anos de existência da aplicação. Dentre elas, seis foram consideradas notáveis pela documentação das releases do VLC.
+A comunidade responsável já liberou dezenas de versões estaveis nesses 16 anos de existência da aplicação. Dentre elas, cinco foram consideradas notáveis pela documentação das releases do VLC.
 
 1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
 
@@ -98,17 +98,37 @@ A maior parte dos plugins relacionados com X11 agora usam XCB ao invés de Xlib.
 O build padrão agora assume que o sistema operacional usa UTF-8 para os seus arquivos de sistema é conteúdo dos mesmos (com exceção da Windows port). Se isso é inaceitável, rode --enable-non-utf8 para configurar o script. Non-UTF-8 file systems support will be removed in future versions.
 
 Os diretórios dos plugins do VLC podem ser sobrescritos, com a variável de ambiente VLC_PLUGIN_PATH. A opção do comando comando --plugin-path foi removida.
- * The default tarballs are now compressed with XZ/LZMA: .tar.xz
- * OSS support is not compiled on Linux by default, pass --enable-oss to the
-   configure script if you use OSSv4 or really want to use OSS emulation.
- * The webplugins have moved to: git://git.videolan.org/npapi-vlc.git
+
+Os tarballs padrão agora são comprimidos usando XZ/LZMA: .tar.xz.
+
+O suporte ao OSS não em compilado no Linux por padrão, rode --enable-oss no script de configuração se você usa o OSSv4 ou realmente deseja usar a emulação de OSS.
+
+O plugin web foi movido para: git://git.videolan.org/npapi-vlc.git
 
  
- 1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
+ 3. Alterações importantes entre as versões 2.0.9 e 2.1.0:  
  
- 1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
+As licensas de enúmeros módulos foram alteradas de GPLv2+ para LGPLv2.1+.
+
+Suporte descontinuado para Macs baseados em PowerPC. VLC agora requer Mac OS X 10.6+
+
+Em breve, os builds oficiais serão exculisavemten para arquiteturas 64bit.
+
+As opções --with-tuning e --without-tuning serão removidas. Para personalizar a compilação para um tipo específico de processador, altere as CFLAGS manualmente.
  
- 1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
+ 4. Alterações importantes entre as versões 2.1.6 e 2.2.0:  
+ 
+Mais módulos tiveram suas licensas alteradas de GPLv2+ para LGPLv2.1+, notavelmente a maioria são de saída de streaming, multiplexadores e módulos de acesso ao output.
+ 
+ 5. Alterações importantes entre as versões 2.2.x e 3.0.0-git:  
+ 
+O suporte para Windows XP/2003/2003R2 do VLC é agora baseado em "melhor-esforço". Deve funcionar, porém com limitações. O suporte para a biblioteca libVLC para Windows XP foi descontinuado. Você _realmente_ deveria atualizar.
+   
+ O Windows Vista (todas as versões) sem o Upgrade de Platform não é suportado.
+ 
+ O suporte para o Linux, requer uma versão do Kernel superior a 2.6.26
+ 
+ O suporte para o Mac OS X 10.6 foi removido. Você precisa do OS X 10.7 para rodar o VLC.
 
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
