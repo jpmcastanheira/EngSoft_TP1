@@ -15,8 +15,6 @@ Trabalho Prático 1 - Engenharia de Software 2 - Universidade Federal de Minas G
 usados, justificativas para adoção dessa arquitetura etc. Se relevante,
 documentar também visões de processo e física.  
 
-[Wikipedia](https://en.wikipedia.org/wiki/VLC_media_player) - Vale a pena dar uma olhada
-
 <h3> 1 - Descrição, features, objetivos e linguagens de programação </h3>
 
 O VLC é um software livre de código aberto, dedicado a reproduzir, tocar e transmitir multimídia. A sigla VLC deriva de "VideoLAN Client", nome abandonado devido a incorporação do programa servidor (VideoLAN Server) no software cliente. O sistema dá suporta para uma ampla variedade de formatos de vídeo, tais como: OGM, MPEG1, MPEG-2, MPEG-4, DivX, DVD, VCDs etc. Os formatos de áudio também têm suporte para  OGG, Speex, FLAC, MPC (Musepack), MP3, WAV e outros. Usando tecnologias e bibliotecas open source, o VLC foi compatibilizado com a maioria das plataformas existentes, incluindo GNU/Linux, Windows, Mac OS X, BSD, iOS e Android.
