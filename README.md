@@ -145,7 +145,6 @@ O suporte para Windows XP/2003/2003R2 do VLC é agora baseado em "melhor-esforç
 
 1.Embora as LibVLC contenha as principais funcionalidades de captura e publicação de conteúdo, existem funções que a LibVLC atualmente não suporta, como o uso de filtros dinâmicos aplicados no conteúdo "on the fly" (overlay, texto sobre o vídeo, filtros de cor, etc).
     
-   <img src="https://docs.google.com/drawings/d/1s8sfC7JaTGCI7dyPuDeNi0P16MMnuhX4_4nBmy3WF4w/pub?w=480&amp;h=360">
 
 Vlcj
 	
@@ -157,6 +156,9 @@ Essa aplicação necessita de pelo menos o JDK 1.6.  Para o funcionamento perfei
 
 A versão 3.0.0+ do vlcj requer a versão 2.1.0+ do VLC, versões anteriores do VLC não são suportadas e não funcionarão.A versão 3.0.0+ do vlcj requer a versão 3.5.2 do JNA. Alguns recursos da versão 3.0.0+ do vlcj (como a nova API do equalizador de áudio) exigem a versão 2.2.0+ do VLC. Se você ainda precisa usar VLC 2.0.x, então você deve permanecer com vlcj 2.x.x em vez de atualizar para a nova série vlcj 3.0.0.
 
+
+
+   ![Diagrama Técnico] <img src="https://docs.google.com/drawings/d/1s8sfC7JaTGCI7dyPuDeNi0P16MMnuhX4_4nBmy3WF4w/pub?w=480&amp;h=360">
 
 
 <h3> 5 - Documentação da arquitetura </h3>
