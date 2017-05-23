@@ -168,7 +168,7 @@ módulos/classes por padrão, o VLC Media Player foi projetado de modo a separar
 principais funcionalidades em módulos bem definidos, com funcionalidades
 "auto-contidas" e isoladas. O principal objetivo do desenvolvimento dessa
 maneira é a separação de interesses, para que módulos e funcionalidades
-distintas possam ser mantidos e atualizados de maneira independente.
+distintos possam ser mantidos e atualizados de maneira independente.
 
 Essa separação de interesses, além das vantagens típicas, possui dois pontos
 adicionais de motivação para o contexto do VLC especificamente. Primeiramente,
@@ -193,7 +193,7 @@ simples e rápida.
 
 Quanto aos componentes principais do funcionamento padrão do player, os mesmos
 podem ser separados entre quatro grandes categorias: interface, input, decoders
-e outputs. Os componentes de interface são os componentes de controle visíveis
+e output. Os componentes de interface são os componentes de controle visíveis
 ao usuário, de onde o software recebe comandos e arquivos de entrada. Os
 componentes de input são os que tratam do processamento da entrada e da
 lógica estrutural, como gerenciamento de clock, inicialização de plugins, etc.
@@ -207,9 +207,37 @@ ser vista como uma adaptação de modelos de camada típicos, como MVC ou de
 aplicações em três camadas, separadas entre grandes módulos de objetivos
 específicos. A figura abaixo mostra um diagrama com os principais grupos de
 componentes e subcomponentes do VLC, separados entre seus interesses, com
-as dependências entre modelos explicitadas. 
+as dependências entre componentes explicitadas. 
 
+![VLC Architecture](images/vlc_arch.png "VLC architectural components")
 
-![VLC Architecture](images/vlc_arch.png)
+A partir da figura, é possível observar-se algumas das principais restrições
+arquiteturais do projeto do VLC. Entre elas, destaca-se o fluxo principal de uso
+do software, que se mantém consistente em todos os contextos de uso: inicia-se
+com a interface, onde são lidos comandos de controle do usuário, que podem ser
+fornecidos através de linha de comando ou da interface visual. Os comandos
+são então direcionados aos componentes de input, que analisam a entrada e
+inicializam as estruturas e funcionalidades necesssárias para o processamento
+dos dados. O fluxo de controle é então passado aos decoders, que realizam a
+computação mais "pesada" do player, decodificando o áudio e vídeo a serem
+reproduzidos. O resultado da decodificação é então passado aos componentes
+de output, que cuidam da exibição de mídia na interface visual.
 
+É importante ressaltar que, apesar do fluxo de controle parecer simples e sequencial,
+na grande maioria do tempo todos os componentes executam de maneira concorrente,
+uma vez que o VLC faz uso extenso de multi-threading. A decodificação e a exibição
+de output, por exemplo, são sempre realizadas em paralelo, independente de qual
+tipo de entrada é fornecido. É possível também que o usuário forneça mais
+arquivos de entrada para processamento enquanto já existem arquivos sendo
+decodificados e exibidos, por exemplo, caracterizando portanto um cenário
+onde todas as quatro "camadas" são executadas simultaneamente. 
 
+Além disso, a figura também mostra um dos motivos pelo qual a arquitetura
+do VLC não pode ser estritamente representada nos modelos de três camadas
+típicos. Por exemplo, os módulos de decoding interagem diretamente com a
+camada de interface, para a exibição do áudio/vídeo decodificados, sem
+que haja intermediação de uma camada de modelo ou lógica. Dessa forma, a
+arquitetura do VLC violaria os princípios arquiteturais desses modelos. Porém,
+a estrutura descrita é intencional e faz parte do projeto original do player,
+de modo que haja o mínimo de overhead possível entre a decodificação e a
+exibição de output, maximizando a performance.
