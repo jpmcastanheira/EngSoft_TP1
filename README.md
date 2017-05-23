@@ -80,4 +80,19 @@ A equipe de desenvolvimento já realizou 70.255 commits até hoje e o software c
 
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
+A LibVLC é capaz de acessar dispositivos de captura, transcodificar e transmitir áudio e vídeo em diferentes protocolos. Permitindo que os desenvolvedores criem uma ampla gama de aplicações multimídia usando os recursos do VLC.
+  
+    Algumas vantagens do LibVLC:
+     
+   1. Diferentes métodos de entrada de vídeo;
+   2. Stream de vídeo e áudio para Icecast2;
+   3. Transcodificação ente formatos;
+   4. Binding java de uso simplificado
+
+    
+    
+    
+
+
+
 <h3> 5 - Documentação da arquitetura </h3>
