@@ -74,7 +74,7 @@ A versão 2.0.0 do VLC media player foi lançada em 18 de fevereiro de 2012, uma
 
 A equipe de desenvolvimento já realizou 70.255 commits até hoje e o software continua evoluindo. Abaixo um gráfico com a relação de alterações em uma linha de tempo do programa.
 
-![Gráfico: Tempo x Alterações](https://lh5.googleusercontent.com/WI96MY3QPcFA31maS9VoTVkpB3AsvIE8tJlIeJwm8-TGdQKgT1F2TR5VhsxLICTqjb0-RPtcN5A8YtU=w1366-h662-rw)
+![Gráfico: Tempo x Alterações](https://raw.githubusercontent.com/jpmcastanheira/EngSoft_TP1/master/images/grafico.png)
 
 A comunidade responsável já liberou dezenas de versões estaveis nesses 16 anos de existência da aplicação. Dentre elas, cinco foram consideradas notáveis pela documentação das releases do VLC.
 
