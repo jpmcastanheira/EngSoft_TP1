@@ -158,8 +158,11 @@ A versão 3.0.0+ do vlcj requer a versão 2.1.0+ do VLC, versões anteriores do 
 
 
 
-   <img src="https://docs.google.com/drawings/d/1s8sfC7JaTGCI7dyPuDeNi0P16MMnuhX4_4nBmy3WF4w/pub?w=480&amp;h=360">
+   <img src="https://docs.google.com/drawings/d/1s8sfC7JaTGCI7dyPuDeNi0P16MMnuhX4_4nBmy3WF4w/pub?w=480&amp;h=360"></img>
 
 
 <h3> 5 - Documentação da arquitetura </h3>
+
 ![VLC Architecture](images/vlc_arch.png)
+
+
