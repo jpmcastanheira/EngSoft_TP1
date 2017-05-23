@@ -78,6 +78,14 @@ A equipe de desenvolvimento já realizou 70.255 commits até hoje e o software c
 
 ![Gráfico: Tempo x Alterações](https://lh5.googleusercontent.com/WI96MY3QPcFA31maS9VoTVkpB3AsvIE8tJlIeJwm8-TGdQKgT1F2TR5VhsxLICTqjb0-RPtcN5A8YtU=w1366-h662-rw)
 
+A comunidade responsável já liberou dezenas de versões estaveis nesses 16 anos de existência da aplicação. Dentre elas, seis foram consideradas notáveis pela documentação das releases do VLC.
+
+1. Alterações importantes entre as versões 1.0.6 e 1.1.0:  
+
+No Linux, os bugs conhecidos na biblioteca ALSA podem impedir a reprodução de áudio do programa. É então expressamente recomendada a atualização da biblioteca para a versão alsa-lib 1.0.24 ou superior.
+
+O módulo de cache se moveu para ${libdir}/vlc/. Portanto a partir de agora o módulo pode ser gerado em tempo de instalação a não ser que você execute a 'staged installation '. Neste caso você pode gerar o módulo cache no seu script pós instalação, invocando o comando 'vlc-cache-gen'. Se o módulo cache não estiver presente e o VLC não puder escrever em ${libdir}/vlc/, resultara em um tempo excessivo para ligar o programa.
+
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
 <h3> 5 - Documentação da arquitetura </h3>
