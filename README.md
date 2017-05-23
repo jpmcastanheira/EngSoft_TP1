@@ -159,7 +159,24 @@ A versão 3.0.0+ do vlcj requer a versão 2.1.0+ do VLC, versões anteriores do 
 
 
    <img src="https://docs.google.com/drawings/d/1s8sfC7JaTGCI7dyPuDeNi0P16MMnuhX4_4nBmy3WF4w/pub?w=480&amp;h=360"></img>
+   
+   
+   
+O fato do VLC ser um plataforma open Source, possibilita a escrita de diversos framework e ferramentas que auxiliam, na popularização dessa ferramenta e no seu desempenho para o usuário final. Para os desenvolvedores, o VLC é considerado um ótimo projeto de código aberto, e pode ser usado como base para outros projetos pessoais e empresariais. O VLC é uma ferramenta desenvolvida utilizando as linguagens de programação C em sua GUI (Graphic User Interface), C++ (com Qt) e Objective-C. 
 
+A linguagem C, foi criada por Dennis Ritchie nos laboratórios da Bell Telephone em 1972. Essa linguagem  foi criada com um propósito: ser usada no desenvolvimento de uma nova versão do sistema operacional Unix. 
+A linguagem C é considerada de propósito geral, ou seja é uma linguagem capaz de ser usada para praticamente qualquer tipo de projeto. É extremamente portável, ou seja um programa escrito em linguagem C pode ser facilmente usado em qualquer plataforma.
+
+Outra característica que auxiliou na escolha de linguagem C, foi a sua eficácia. Os programas em C são pequenos e extremamente rápidos. Mais rápido que C, só em Assembly, programando direto no hardware. A compilação em C faz com que o programa ocorra em níveis bem próximos do hardware, otimizando bastante a execução dos programas.
+Programadores em C tem o total controle e acesso aos recursos do computador e do sistema operacional, podendo acessar e lidar com áreas do sistema que simplesmente são inacessíveis com outras linguagens de programação, como Java ou C#.
+
+<img src="https://docs.google.com/drawings/d/1CJwZJTFrXeMOxfarwPg1NY5QMxekfxvPZa3FAH1RGHE/pub?w=604&amp;h=216">
+
+Outra linguagem utilizado no desenvolvimento do VLC e C++ com QT. No VLC o Qt foi utilizado para desenvolver a interface gráfica da aplicação. O Qt é um framework multiplataforma para desenvolvimento de interfaces gráficas em C++, criado pela empresa norueguesa Trolltech. Com ele é possível desenvolver aplicativos e bibliotecas uma única vez e compilá-los para diversas plataformas sem que seja necessário alterar o código fonte. Essa característica, é fundamental para a produtividade dos programadores, que não vão ter que reescrever o código para as múltiplas plataformas e será possível manter a eficiência da aplicação, já que o QT e escrito em c++. 
+
+Para a utilização de alguns plugins na plataforma IOS, foi necessário utilizar a linguagem Object-C para criar um wrapper, para que assim, fosse possível utilizar o VLC na plataforma IOS. 
+
+Objective-C é um superconjunto da linguagem de programação C e fornece recursos orientados a objetos e um tempo de execução dinâmico. Objective-C herda a sintaxe, tipos primitivos e instruções de controle de fluxo de C e adiciona sintaxe para definir classes e métodos. Ele também adiciona suporte no nível de linguagem para o gerenciamento de gráfico de objetos e literais de objetos, ao mesmo tempo que fornece digitação e vinculação dinâmica, adiando muitas responsabilidades até o tempo de execução. 
 
 <h3> 5 - Documentação da arquitetura </h3>
 
