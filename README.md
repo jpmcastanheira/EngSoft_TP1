@@ -88,18 +88,21 @@ O módulo de cache se moveu para ${libdir}/vlc/. Portanto a partir de agora o m�
 
 <h3> 4 - Frameworks, ferramentas e LPs </h3>
 
-A LibVLC é capaz de acessar dispositivos de captura, transcodificar e transmitir áudio e vídeo em diferentes protocolos. Permitindo que os desenvolvedores criem uma ampla gama de aplicações multimídia usando os recursos do VLC.
+  A LibVLC é capaz de acessar dispositivos de captura, transcodificar e transmitir áudio e vídeo em diferentes protocolos. Permitindo que os desenvolvedores criem uma ampla gama de aplicações multimídia usando os recursos do VLC.
   
-    Algumas vantagens do LibVLC:
+   Algumas vantagens do LibVLC:
      
    1. Diferentes métodos de entrada de vídeo;
    2. Stream de vídeo e áudio para Icecast2;
-   3. Transcodificação ente formatos;
+   3. Transcodificação entre formatos;
    4. Binding java de uso simplificado
 
+  Algumas Desvantagens do LibVLC: 
+
+    1. Embora as LibVLC contenha as principais funcionalidades de captura e publicação de conteúdo, existem funções que a LibVLC atualmente não suporta, como o uso de filtros dinâmicos aplicados no conteúdo "on the fly" (overlay, texto sobre o vídeo, filtros de cor, etc).
     
-    
-    
+   ![Diagrama Técnico] https://goo.gl/QKy1Ar
+
 
 
 
