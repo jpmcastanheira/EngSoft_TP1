@@ -163,6 +163,53 @@ A versão 3.0.0+ do vlcj requer a versão 2.1.0+ do VLC, versões anteriores do 
 
 <h3> 5 - Documentação da arquitetura </h3>
 
+Apesar do uso da linguagem C, que em princípio não possui encapsulamento em
+módulos/classes por padrão, o VLC Media Player foi projetado de modo a separar suas
+principais funcionalidades em módulos bem definidos, com funcionalidades
+"auto-contidas" e isoladas. O principal objetivo do desenvolvimento dessa
+maneira é a separação de interesses, para que módulos e funcionalidades
+distintas possam ser mantidos e atualizados de maneira independente.
+
+Essa separação de interesses, além das vantagens típicas, possui dois pontos
+adicionais de motivação para o contexto do VLC especificamente. Primeiramente,
+o VLC é mantido e desenvolvido por um grupo de desenvolvedores
+de tamanho considerável, sem que haja um nível alto de comunicação e
+planejamento entre os mesmos. Logo, a separação em módulos facilita a
+capacidade de desenvolvimento paralelo e "espalhado" de funcionalidades,
+de modo que, contanto que as interfaces e as funcionalidades base (principalmente
+relacionadas à libvlc) se mantenham estáveis, desenvolvedores independentes
+podem contribuir de maneira isolada sem que a arquitetura e estabilidade
+do software como um todo seja comprometida.
+
+Porém, a principal motivação em particular do VLC vem da filosofia do seu projeto:
+um dos seus maiores objetivos desde sua concepção é de que o player deve
+ser extensível. Ou seja, é extremamente importante que novos desenvolvedores
+possam implementar novas funcionalidades ou plugins, e acoplá-los ao
+funcionamento padrão do VLC, de maneira simples e com baixa barreira de
+entrada. Para tanto, a separação de módulos é primordial, pois ela garante
+a minimização da interdependência entre seções do código distintas, e
+incentiva o suporte à inclusão de novos módulos e plugins de maneira
+simples e rápida.
+
+Quanto aos componentes principais do funcionamento padrão do player, os mesmos
+podem ser separados entre quatro grandes categorias: interface, input, decoders
+e outputs. Os componentes de interface são os componentes de controle visíveis
+ao usuário, de onde o software recebe comandos e arquivos de entrada. Os
+componentes de input são os que tratam do processamento da entrada e da
+lógica estrutural, como gerenciamento de clock, inicialização de plugins, etc.
+Os componentes de decoding são os principais componentes funcionais, realizando
+o processamento dos dados em si, e a geração dos dados de áudio e vídeo no formato
+correto para que possam ser reproduzidos. Já os componentes de output cuidam
+da apresentação dos dados decodificados para o usuário final.
+
+Embora o VLC não siga nenhum modelo arquitetural rígido, sua arquitetura pode
+ser vista como uma adaptação de modelos de camada típicos, como MVC ou de
+aplicações em três camadas, separadas entre grandes módulos de objetivos
+específicos. A figura abaixo mostra um diagrama com os principais grupos de
+componentes e subcomponentes do VLC, separados entre seus interesses, com
+as dependências entre modelos explicitadas. 
+
+
 ![VLC Architecture](images/vlc_arch.png)
 
 
