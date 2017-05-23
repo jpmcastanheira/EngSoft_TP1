@@ -143,9 +143,9 @@ O suporte para Windows XP/2003/2003R2 do VLC é agora baseado em "melhor-esforç
 
   Algumas Desvantagens do LibVLC: 
 
-    1. Embora as LibVLC contenha as principais funcionalidades de captura e publicação de conteúdo, existem funções que a LibVLC atualmente não suporta, como o uso de filtros dinâmicos aplicados no conteúdo "on the fly" (overlay, texto sobre o vídeo, filtros de cor, etc).
+1.Embora as LibVLC contenha as principais funcionalidades de captura e publicação de conteúdo, existem funções que a LibVLC atualmente não suporta, como o uso de filtros dinâmicos aplicados no conteúdo "on the fly" (overlay, texto sobre o vídeo, filtros de cor, etc).
     
-   ![Diagrama Técnico] https://goo.gl/QKy1Ar
+   <img src="https://docs.google.com/drawings/d/1s8sfC7JaTGCI7dyPuDeNi0P16MMnuhX4_4nBmy3WF4w/pub?w=480&amp;h=360">
 
 
 
