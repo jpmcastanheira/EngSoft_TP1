@@ -256,3 +256,104 @@ arquitetura do VLC violaria os princípios arquiteturais desses modelos. Porém,
 a estrutura descrita é intencional e faz parte do projeto original do player,
 de modo que haja o mínimo de overhead possível entre a decodificação e a
 exibição de output, maximizando a performance.
+
+Outros detalhes mostram aspectos que poderiam ser vistos como violações
+arquiteturais em um modelo restrito, mas que tratam-se de simplesmente
+decisões de projeto a fim de maximizar a praticidade e eficiência do software.
+Por exemplo, pode-se observar que o módulo de output de áudio, diferentemente
+do de vídeo, é inicializado e interage não só com os componentes de decodificação
+de aúdio em si, mas também com o componente main, que é composto apenas pela
+função de ponto de entrada do programa. Isso se dá simplesmente pelo fato de que
+a funcionalidade usada para reproduzir sons de interação do usuário com a
+interface visual é a mesma usada para reprodução de arquivos de áudio. Portanto,
+o componente de output de áudio é inicializado diretamente pelo componente de
+inicialização do programa como um todo, mesmo que em uma modelagem arquitetural
+tradicional tal responsibilidade seria limitada apenas aos componentes de
+decodificação de áudio.
+
+## Padrões de Projeto ##
+
+Devido à origem do projeto inicialmente como estudo acadêmico, e à escolha de
+linguagem C, que não oferece funcionalidades de orientação a objetos, a presença
+de padrões de projeto clássicos no código do VLC é menos frequente que em outros
+projetos de tamanho comparável. Ainda assim, é possível observar a ocorrência de
+alguns dos mais comuns. Entre eles:
+
+* Wrappers
+
+O VLC implementa uma quantidade significativa de wrappers, a fim de manter a
+sintaxe e a forma de uso de suas interfaces o mais uniforme possível. Essa 
+uniformidade garante não só a legibilidade do código mas também a portabilidade
+do software, que é um de seus diferenciais. Como as interfaces usadas em código
+lógico são sempre as mesmas, basta que a implementação das funções wrappers
+sejam adaptadas para plataformas distintas para que o software possa ser portado
+para as mesmas. Por exemplo, o uso de bibliotecas padrão da linguagem C, como 
+pthreads, não é feito diretamente através da chamada de funções oficiais da
+biblioteca, como pthread_create ou pthread_mutex_init. As mesmas são acessadas
+através de funções wrapper, chamadas vlc_thread_create e vlc_mutex_init.
+
+* Concurrency
+
+Como mencionado anteriormente, o VLC faz uso frequente de execução
+concorrente/paralela através da criação de threads. Embora essa decisão de
+projeto ocasione em benefícios de performance significativos, ela também gera
+consequências consideráveis na complexidade do desenvolvimento. Por exemplo,
+o fato de que a decodificação e a exibição de mídia são feitos de maneira
+assíncrona adiciona grande dificuldade na manutenção do comportamento ideal
+do player, uma vez que na grande maioria do tempo o conteúdo sendo decodificado
+não corresponde ao conteúdo sendo exibido pelos componentes de output. Logo,
+cria-se a necessidade da existência de um sistema de clock de alta eficiência
+e minuciosamente preciso, para que não ocorram falhas de exibição.
+
+Para o gerenciamento das possíveis inconsistências geradas pela execução
+concorrente, o VLC faz uso de vários dos padrões de projeto clássicos da área. 
+Entre eles, destacam-se o uso frequente de locks (tanto totais quanto de 
+read-write), thread pools e schedulers. Vale ressaltar que o modelo de
+concorrência do VLC NÃO faz uso de troca de mensagens, devido ao overhead
+envolvido em implementações do tipo. O VLC portanto prefere realizar interações
+entre threads distintas ou por uso de recursos comuns (como compartilhamento de
+memória), ou por referências diretas entre threads, através de ponteiros e 
+thread ids.
+
+* Code Conventions
+
+Devido ao grande número de contribuidores do projeto, o VLC determina um padrão
+restrito de sintaxe, que deve ser seguido por todos os desenvolvedores, e que é
+fiscalizado pelos mantenedores do projeto na avaliação de commits e pull requests.
+O mesmo tem o objetivo de manter a legibilidade e uniformidade do mesmo. O padrão
+foi determinado de modo que não só ajude na consistência do código, mas também
+sirva como maneira de auto-documentação do código, sem que sejam necessários
+comentários supérfluos.
+
+São alguns dos padrões definidos pela especificação do VLC:
+
+* O nome de variáveis deve ter como prefixo um identificador do seu tipo:
+  * i_ para inteiros;
+  * b_ para booleanos;
+  * d_ ou _f para doubles e floats;
+  * pf_ para ponteiros para funções;
+  * psz_ para ponteiros para strings null-terminadas;
+  * p_ para ponteiros genéricos;
+* Espaços em branco devem ser inseridos antes e depois de todos os operadores, e
+entre separadores (como parênteses e chaves).
+* Chaves delimitadoras de escopo devem estar sozinhas em suas linhas;
+* Comentários devem usar apenas a sintaxe de barras e asteriscos, /* */
+
+O trecho de código abaixo exemplifica esses padrões.
+
+```C
+/*variable names should have prefixes*/
+char psz_error_msg[42]; /*null-terminated string*/
+int i_counter; /*regular integer*/
+int *pi_integer_vector[MAX_SIZE]; /*pointer to integer*/
+void (* pf_next_data_packet) ( int * ); /*function pointer*/
+
+/*brackets should be spaced*/
+for( i = 0; i < 12; i++, j +=42 );
+
+/*scope brackets have their own lines*/
+if ( i_es == 42 )
+{
+    p_buffer[0] = 0x12;
+}
+```
