@@ -1,10 +1,10 @@
 # EngSoft_TP1
 Trabalho Prático 1 - Engenharia de Software 2 - Universidade Federal de Minas Gerais
 
-<h2> Integrantes </h2>
+## Integrantes
   Breno Campos Ferreira Guimarães, César Augusto Moura Ferreira e João Paulo Martins Castanheira
   
-<h2> Tópicos a serem tratados </h2>
+## Tópicos a serem tratados
 
 1 - Descrição do sistema, incluindo principais features, objetivo, linguagem de programação.  
 2 - Informações da equipe de desenvolvimento: principais desenvolvedores, funções na equipe (?)  
@@ -15,7 +15,7 @@ Trabalho Prático 1 - Engenharia de Software 2 - Universidade Federal de Minas G
 usados, justificativas para adoção dessa arquitetura etc. Se relevante,
 documentar também visões de processo e física.  
 
-<h3> 1 - Descrição, features, objetivos e linguagens de programação </h3>
+# 1 - Descrição, features, objetivos e linguagens de programação
 
 O VLC é um software livre de código aberto, dedicado a reproduzir, tocar e transmitir multimídia. A sigla VLC deriva de "VideoLAN Client", nome abandonado devido a incorporação do programa servidor (VideoLAN Server) no software cliente. O sistema dá suporta para uma ampla variedade de formatos de vídeo, tais como: OGM, MPEG1, MPEG-2, MPEG-4, DivX, DVD, VCDs etc. Os formatos de áudio também têm suporte para  OGG, Speex, FLAC, MPC (Musepack), MP3, WAV e outros. Usando tecnologias e bibliotecas open source, o VLC foi compatibilizado com a maioria das plataformas existentes, incluindo GNU/Linux, Windows, Mac OS X, BSD, iOS e Android.
 
@@ -27,7 +27,7 @@ O VLC suporta todos os tipode de áudio e vídeo suportados pelas bibliotecas li
 
 O reprodutor pode executar um vídeo diretamente no papel de parede da área de trabalho do windows, usando o DirectX. Recurso disponível apenas para o windows. Além dissso o VLC também oferece um screencast, recurso que grava em vídeo as atividades mostradas no output padrão do sistema operacional. É possível também fazer a conversão de mídia para uma ampla gama de formatos suportados. Finalmente o programa pode ser instalado ou reproduzir diretamente de um USB flash drive ou outra unidade externa. O VLC tem o código fonte escrito na linguagem de programação C e sua GUI (Graphic User Interface), escrita em C++ (com Qt) e Objective-C.
 
-<h3> 2 - Equipe de Desenvolvimento </h3>
+# 2 - Equipe de Desenvolvimento 
 
   A equipe do VLC conta com atuais 444 contribuidores ativos no mundo todo. Porém muito mais pessoas são lembradas e agradecidas no arquivo [AUTHORS](https://github.com/videolan/vlc/blob/master/AUTHORS) no diretório raíz do projeto. Entre estes estão 596 programadores, 13 artistas, uma pessoa responsável pela documentação.
   
@@ -62,7 +62,7 @@ Alex Strelnikov - Porta OS/2.
 German Tischler - Patch de entrada FreeBSD DVD.  
 Gildas Bazin - Manutenções diversas na porta Win32.  
 
-<h3> 3 - Evolução do sistema </h3>
+# 3 - Evolução do sistema
 
 O projeto VideoLan foi iniciado na universidade École Centrale Paris a qual relicenciou a VLC sobre a licensa GPLv2 em fevereiro de 2001. Desde então, o VLC obteve mais de dois bilhões de downloads. Porém o software teve seu início como um projeto acadêmico em 1996 e como já citado anteriormente, VLC costumava significar VideoLan Client quando a aplicação se resumia a um software puramente cliente. Mas como a aplicação já não é mais exclusivamente um cliente seu nome original não se aplica mais. A intenção consistia em um cliente e um servidor para realizar streaming de vídeo através de um satelite para uso no campus da universidade em Paris.
 
@@ -128,7 +128,7 @@ O suporte para Windows XP/2003/2003R2 do VLC é agora baseado em "melhor-esforç
  
  O suporte para o Mac OS X 10.6 foi removido. Você precisa do OS X 10.7 para rodar o VLC.
 
-<h3> 4 - Frameworks, ferramentas e LPs </h3>
+# 4 - Frameworks, ferramentas e LPs
 
   A LibVLC é capaz de acessar dispositivos de captura, transcodificar e transmitir áudio e vídeo em diferentes protocolos. Permitindo que os desenvolvedores criem uma ampla gama de aplicações multimídia usando os recursos do VLC.
   
@@ -176,7 +176,7 @@ Para a utilização de alguns plugins na plataforma IOS, foi necessário utiliza
 
 Objective-C é um superconjunto da linguagem de programação C e fornece recursos orientados a objetos e um tempo de execução dinâmico. Objective-C herda a sintaxe, tipos primitivos e instruções de controle de fluxo de C e adiciona sintaxe para definir classes e métodos. Ele também adiciona suporte no nível de linguagem para o gerenciamento de gráfico de objetos e literais de objetos, ao mesmo tempo que fornece digitação e vinculação dinâmica, adiando muitas responsabilidades até o tempo de execução. 
 
-<h3> 5 - Documentação da arquitetura </h3>
+# 5 - Documentação da arquitetura
 
 Apesar do uso da linguagem C, que em princípio não possui encapsulamento em
 módulos/classes por padrão, o VLC Media Player foi projetado de modo a separar suas
