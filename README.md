@@ -1,10 +1,10 @@
 # EngSoft_TP1
 Trabalho Prático 1 - Engenharia de Software 2 - Universidade Federal de Minas Gerais
 
-## Integrantes
+<h2> Integrantes </h2>
   Breno Campos Ferreira Guimarães, César Augusto Moura Ferreira e João Paulo Martins Castanheira
   
-## Tópicos a serem tratados
+<h2> Tópicos a serem tratados </h2>
 
 1 - Descrição do sistema, incluindo principais features, objetivo, linguagem de programação.  
 2 - Informações da equipe de desenvolvimento: principais desenvolvedores, funções na equipe (?)  
@@ -15,7 +15,7 @@ Trabalho Prático 1 - Engenharia de Software 2 - Universidade Federal de Minas G
 usados, justificativas para adoção dessa arquitetura etc. Se relevante,
 documentar também visões de processo e física.  
 
-# 1 - Descrição, features, objetivos e linguagens de programação
+<h3> 1 - Descrição, features, objetivos e linguagens de programação </h3>
 
 O VLC é um software livre de código aberto, dedicado a reproduzir, tocar e transmitir multimídia. A sigla VLC deriva de "VideoLAN Client", nome abandonado devido a incorporação do programa servidor (VideoLAN Server) no software cliente. O sistema dá suporta para uma ampla variedade de formatos de vídeo, tais como: OGM, MPEG1, MPEG-2, MPEG-4, DivX, DVD, VCDs etc. Os formatos de áudio também têm suporte para  OGG, Speex, FLAC, MPC (Musepack), MP3, WAV e outros. Usando tecnologias e bibliotecas open source, o VLC foi compatibilizado com a maioria das plataformas existentes, incluindo GNU/Linux, Windows, Mac OS X, BSD, iOS e Android.
 
@@ -27,7 +27,7 @@ O VLC suporta todos os tipode de áudio e vídeo suportados pelas bibliotecas li
 
 O reprodutor pode executar um vídeo diretamente no papel de parede da área de trabalho do windows, usando o DirectX. Recurso disponível apenas para o windows. Além dissso o VLC também oferece um screencast, recurso que grava em vídeo as atividades mostradas no output padrão do sistema operacional. É possível também fazer a conversão de mídia para uma ampla gama de formatos suportados. Finalmente o programa pode ser instalado ou reproduzir diretamente de um USB flash drive ou outra unidade externa. O VLC tem o código fonte escrito na linguagem de programação C e sua GUI (Graphic User Interface), escrita em C++ (com Qt) e Objective-C.
 
-# 2 - Equipe de Desenvolvimento 
+<h3> 2 - Equipe de Desenvolvimento </h3>
 
   A equipe do VLC conta com atuais 444 contribuidores ativos no mundo todo. Porém muito mais pessoas são lembradas e agradecidas no arquivo [AUTHORS](https://github.com/videolan/vlc/blob/master/AUTHORS) no diretório raíz do projeto. Entre estes estão 596 programadores, 13 artistas, uma pessoa responsável pela documentação.
   
@@ -62,7 +62,7 @@ Alex Strelnikov - Porta OS/2.
 German Tischler - Patch de entrada FreeBSD DVD.  
 Gildas Bazin - Manutenções diversas na porta Win32.  
 
-# 3 - Evolução do sistema
+<h3> 3 - Evolução do sistema </h3>
 
 O projeto VideoLan foi iniciado na universidade École Centrale Paris a qual relicenciou a VLC sobre a licensa GPLv2 em fevereiro de 2001. Desde então, o VLC obteve mais de dois bilhões de downloads. Porém o software teve seu início como um projeto acadêmico em 1996 e como já citado anteriormente, VLC costumava significar VideoLan Client quando a aplicação se resumia a um software puramente cliente. Mas como a aplicação já não é mais exclusivamente um cliente seu nome original não se aplica mais. A intenção consistia em um cliente e um servidor para realizar streaming de vídeo através de um satelite para uso no campus da universidade em Paris.
 
@@ -128,8 +128,9 @@ O suporte para Windows XP/2003/2003R2 do VLC é agora baseado em "melhor-esforç
  
  O suporte para o Mac OS X 10.6 foi removido. Você precisa do OS X 10.7 para rodar o VLC.
 
-# 4 - Frameworks, ferramentas e LPs
+<h3> 4 - Frameworks, ferramentas e LPs </h3>
 
+<h4> Frameworks </h4>
   A LibVLC é capaz de acessar dispositivos de captura, transcodificar e transmitir áudio e vídeo em diferentes protocolos. Permitindo que os desenvolvedores criem uma ampla gama de aplicações multimídia usando os recursos do VLC.
   
    Algumas vantagens do LibVLC:
@@ -158,8 +159,28 @@ A versão 3.0.0+ do vlcj requer a versão 2.1.0+ do VLC, versões anteriores do 
 
    <img src="https://docs.google.com/drawings/d/1s8sfC7JaTGCI7dyPuDeNi0P16MMnuhX4_4nBmy3WF4w/pub?w=480&amp;h=360"></img>
    
+   <h4> Ferramentas </h4>
+   Converta arquivos de mídia, você ainda costuma baixar pesados programas para conversão de arquivos de áudio ou vídeo, além de gigantescos pacotes de codecs para que os pesados programas possam funcionar? Pois saiba que não precisa gastar espaço em seu HD sendo que seu player é capaz de fazer isso, precisando apenas realizar uns poucos passos.
+
+O VLC pode converter arquivos de mídia entre os formatos que ele suporta. Você pode usar isso para fazer um vídeo menor para um dispositivo móvel, converter mídia de um formato não suportado para um dispositivo compatível, ou mesmo para extrair o áudio de um vídeo e salvá-lo como um arquivo separado. 
+
+Streaming de mídia através da rede ou Internet, pois saiba que o VLC pode fazer streaming de mídia através da Internet ou em sua rede local. 
+
+Grave sua área de trabalho, VLC pode carregar seu desktop como um dispositivo de entrada. Isso significa que você pode usar o recurso Convert/Save para salvar um vídeo do seu desktop, efetivamente transformando o VLC em um software de captura de tela.
+
+Controlar remotamente a reprodução através de um navegador, O VLC tem um servidor HTTP integrado você pode habilitar, configurá-lo e então acessar remotamente o seu cliente VLC através de um navegador web. Isso permitirá a você controlar remotamente um PC Media Center a partir de um navegador web, com controle de reprodução e fila de arquivos de áudio ou vídeo.
+
+Assista vídeos do Youtube no VLC, também é possível ver vídeos do Youtube diretamente no VLC. Basta navegar no Youtube normalmente, acessando o vídeo que queira. Copie o link do vídeo.Vá ao menu Mídia, selecione Fluxo de rede e cole o link do vídeo que escolheu. Clique em Reproduzir.
+
+Assine Podcasts, podcasts são gravações em áudio de programas, tal qual as gravações de rádio de antigamente. Uma grande quantidade de sites e até blogs disponibilizam seus podcasts para apreciação dos internautas que acompanham. Geralmente são debatidos assuntos em torno de uma tema ou vários. É uma forma de se manter informado, acompanhando as vozes e comentários bdas pessoas que participam do blog ou site que acompanha.
+
+Escutar rádios pela internet,antes de Pandora e Spotify, havia streaming de estações de rádio da Internet. Houve um tempo em que os internautas transmitiam esses streams principalmente estas estações de rádio de dentro do Winamp. Você pode ver um diretório pesquisável de estações de rádio de dentro VLC. 
+
+Aplicar efeitos de vídeo e áudio, VLC pode aplicar efeitos de áudio, efeitos de vídeo e ajustar o modo de áudio de um vídeo e sincronizá-los.
+
+Reprodução ASCII não é um recurso muito útil. É mais para divertimento. No modo de reprodução ASCII, VLC irá exibir um vídeo como caracteres ASCII, em tempo real. 
    
-   
+   <h4> Linguagem de Programação </h4>
 O fato do VLC ser um plataforma open Source, possibilita a escrita de diversos framework e ferramentas que auxiliam, na popularização dessa ferramenta e no seu desempenho para o usuário final. Para os desenvolvedores, o VLC é considerado um ótimo projeto de código aberto, e pode ser usado como base para outros projetos pessoais e empresariais. O VLC é uma ferramenta desenvolvida utilizando as linguagens de programação C em sua GUI (Graphic User Interface), C++ (com Qt) e Objective-C. 
 
 A linguagem C, foi criada por Dennis Ritchie nos laboratórios da Bell Telephone em 1972. Essa linguagem  foi criada com um propósito: ser usada no desenvolvimento de uma nova versão do sistema operacional Unix. 
@@ -176,7 +197,7 @@ Para a utilização de alguns plugins na plataforma IOS, foi necessário utiliza
 
 Objective-C é um superconjunto da linguagem de programação C e fornece recursos orientados a objetos e um tempo de execução dinâmico. Objective-C herda a sintaxe, tipos primitivos e instruções de controle de fluxo de C e adiciona sintaxe para definir classes e métodos. Ele também adiciona suporte no nível de linguagem para o gerenciamento de gráfico de objetos e literais de objetos, ao mesmo tempo que fornece digitação e vinculação dinâmica, adiando muitas responsabilidades até o tempo de execução. 
 
-# 5 - Documentação da arquitetura
+<h3> 5 - Documentação da arquitetura </h3>
 
 Apesar do uso da linguagem C, que em princípio não possui encapsulamento em
 módulos/classes por padrão, o VLC Media Player foi projetado de modo a separar suas
